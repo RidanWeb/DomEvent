@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 id="heading" class="text-center bg-primary w-50 mx-auto py-4 text-white">JavaScript DOM Events</h1>
+
+    <section class="w-50 mx-auto p-4 bg-info-subtle">
+
+    <p class="para" id="paraColor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit neque deleniti facilis voluptates vero fugiat consectetur fugit aut voluptatem voluptate est, officia, repellendus qui nisi alias earum repudiandae sunt reiciendis.</p>
+
+    <button id = "test" onclick="console.log('Hello Ridan')">Test</button>
+
+    <!-- option 01====================== -->
+    <button id = "bRed" onclick="document.body.style.backgroundColor = 'red'">Body Red</button>
+
+    <!-- option 02====================== -->
+    <button id = "hGreen" onclick="makeMeGreen()">Heading Green</button>
+
+    <!-- option 03====================== -->
+    <button id = "pChange">paragraph Change</button>
+    <!-- option 03.5==================== -->
+    <button id = "pColor">paragraph Color</button>
+
+    <!-- option 04======================= -->
+    <button id = "bpurple">Body purple</button>
+
+    <!-- option 04.5===================== -->
+    <button id = "bYellow">Body Yellow</button>
+
+    <!-- option 4 final ================= -->
+    <button id = "bGoldenRod">Body GoldenRod</button>
+
+
+
+
+    </section>
+
+    <section class="w-50 mx-auto bg-info-subtle p-4 mt-3">
+
+        <h5 id="inputText"></h5>
+        <input id="input-field" type="text" autocomplete="off">
+        <input id="btn" type="button" value="Set Heading">
+
+    </section>
+
+    <section id="commentPara" class="w-50 mx-auto bg-info-subtle p-4 mt-3">
+
+        <h2 class="text-center">Comment Box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quo officiis hic officia? Rem, sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quo officiis hic officia? Rem, sed.</p>
+
+        <input id="CommentBox" type="text-area" col="30" row="40"  autocomplete="off">
+        <input id="commentBtn" type="button" value="Set Heading">
+
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="inputRead.js"></script>
+</body>
+</html>
